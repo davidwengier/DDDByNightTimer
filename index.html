@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js" style="background-color: rgb(0, 0, 0); cursor: none;" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Talk Countdown</title>
+  <meta name="description" content="Speaker Timer">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body class="" style="background-color: rgb(0, 0, 0);">
+  <div id="sponsor" style="position: absolute; top: 20px; left: 30px; font-size: 30pt;">
+    <img style="vertical-align:text-top" height="80" src="azurelogo2.png" />
+    <span style="color: #999999">Official supplier of timers to DDD By Night</span>
+  </div>
+  <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+    <div id="counter-wrapper" class="row" style="display: none;">
+      <div class="col-xs-12">
+        <div id="overtime" style="display: none;">
+          &nbsp;
+
+        </div>
+        <div id="timer" class="timer-undertime">
+
+          <div id="counter-container">17</div>
+        </div>
+      </div>
+    </div>
+    <div id="dot-wrapper" class="row" style="display: none;">
+      <div id="dots" class="row dotStart">
+        <div class="dotblock">
+          <div id="one" class="dot dotFade"></div>
+        </div>
+        <div class="dotblock">
+          <div id="two" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="three" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="four" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="five" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="six" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="seven" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="eight" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="nine" class="dot"></div>
+        </div>
+        <div class="dotblock">
+          <div id="ten" class="dot"></div>
+        </div>
+      </div>
+      <div id="pause" class="fade-object" style="display: none;">
+        <div class="pausedot" style="display: block;"><img src="images/pause.svg" id="pause-icon"></div>
+      </div>
+    </div>
+    <div id="pauseModal" aria-hidden="true" class="modal fade" style="display: none;">
+      <div class="modalOptions">
+        <div class="row">
+          <div class="col-xs-2 modaldot col-xs-offset-4">
+            <div id="resume" class="helpdot"><img src="images/play.svg" id="modal-play-icon" class="svg">
+              <p>Resume</p>
+            </div>
+          </div>
+          <div class="col-xs-2 modaldot">
+            <div id="restart" class="helpdot"><img src="images/start-over.svg" id="modal-play-icon" class="svg">
+              <p>Start&nbsp;Over</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="startPauseModal" aria-hidden="true" class="modal" style="display: none;">
+      <div class="modalOptions">
+        <div class="row">
+          <div class="col-xs-2 modaldot col-xs-offset-5">
+            <div id="startPlay" class="helpdot"><img src="images/play.svg" id="modal-play-icon" class="svg">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      countdown.initialize();
+    });
+  </script>
+</body>
+
+</html>
